@@ -1,5 +1,6 @@
 body{
   background-color: lightblue;
+  margin: 20px 0 0 100px;
 }
 
 .active {
@@ -13,4 +14,21 @@ body{
 .sweet{
   list-style: none;
   display: inline-block;
+}
+li{
+  display: inline-block;
+  padding-right: 10px;
+}
+
+img{
+  width: 300px;
+  height: 300px;
+  border: 1px solid green;
+}
+.center {
+  text-align: center;
+  font-size:  25px;
+}
+.db{
+  margin: 0 0 0 400px;
 }
