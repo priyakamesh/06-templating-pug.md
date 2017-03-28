@@ -1,0 +1,16 @@
+body{
+  background-color: lightblue;
+}
+
+.active {
+  display: none;
+}
+
+.nav {
+  font-size: 40px;
+}
+
+.sweet{
+  list-style: none;
+  display: inline-block;
+}
