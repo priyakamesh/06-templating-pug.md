@@ -1,0 +1,43 @@
+doctype html
+html
+  head
+    title Sweet Bakery
+    include stylesheets.pug
+    //- include layout.pug
+
+  body
+    //- var currentUrl = '/'
+    //- p= url
+    //- .nav
+    //-   ul.sweet
+    //-     li
+    //-       a(class={active: url === '/'} href='/') Home
+    //-     li
+    //-       a(class={active: url === '/about'} href='/about') About
+    //-     li
+    //-       a(class={active: url === '/inventory'} href='/inventory') Inventory
+    .nav
+      ul.sweet
+        if url === '/'
+          li
+            a(href='/about') About
+          li
+            a(href = '/inventory') Inventory
+        else if url === '/about'
+          li
+            a(href='/') Home
+          li
+            a(href = '/inventory') Inventory
+        else if url === '/inventory'
+          li
+            a(href='/') Home
+          li
+            a(href = '/About') About
+        else
+          li
+            a(href='/about') About
+          li
+            a(href = '/inventory') Inventory
+
+    h3.center Priya's Bakery
+    block content
